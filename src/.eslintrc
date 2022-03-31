@@ -1,0 +1,9 @@
+{
+    "extends": ["plugin:prettier/recommended"],
+    "plugins": ["prettier"],
+    "ignorePatterns": ["node_modules/"],
+    "env": {
+        "browser": true,
+        "node": true
+    }
+}

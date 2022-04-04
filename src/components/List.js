@@ -45,7 +45,7 @@ export const List = () => {
                                     <h3 className="mt-3">{item.title}</h3>
                                     <h4 className="my-3">{item.price}</h4>
                                     <a
-                                        href="#"
+                                        href="#none"
                                         className="view-btn btn-primary block w-full"
                                     >
                                         View

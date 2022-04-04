@@ -23,7 +23,9 @@
 .btn-primary{
   @apply border border-black px-10 py-3.5 text-center transition duration-500 hover:bg-gray hover:text-white hover:transition hover:ease-in-out hover:duration-500
 }
-
+.btn-primary-w{
+  @apply border border-white px-10 py-3.5 text-center transition duration-500 hover:bg-white hover:text-gray hover:transition hover:ease-in-out hover:duration-500
+} 
 .title{
   @apply text-6xl tracking-wider text-gray font-domaine font-normal
 }
@@ -35,4 +37,9 @@
 
 .item img{
   margin: 0 auto;
+}
+
+.banner{
+  @apply bg-no-repeat bg-center bg-cover;
+  background-image: url(./assets/images/bg3.webp);
 }

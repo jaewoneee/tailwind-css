@@ -1,6 +1,6 @@
 export const Header = () => {
     return (
-        <div className="header-wrap w-full  flex justify-between items-center px-12 py-4 fixed z-10">
+        <div className="header-wrap w-full  flex justify-between items-center px-12 py-4 fixed z-10 bg-sweet">
             <h1 id="logo" className="w-48">
                 <a href="#">
                     <svg
@@ -48,10 +48,10 @@ export const Header = () => {
                 </li>
             </ul>
             <ul className="tool-box grid grid-cols-3 text-center">
-                <li className="">
+                <li className="shrink">
                     <a href="">Account</a>
                 </li>
-                <li className="">
+                <li className="flex items-center justify-center">
                     <button className="search-btn">
                         <svg
                             width="17"
@@ -75,7 +75,7 @@ export const Header = () => {
                         </svg>
                     </button>
                 </li>
-                <li className="">
+                <li className="flex items-center justify-center">
                     <button className="cart-btn">
                         <svg
                             width="17"

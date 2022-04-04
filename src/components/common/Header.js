@@ -1,6 +1,14 @@
-export const Header = () => {
+import { useEffect, useState } from 'react';
+
+export const Header = props => {
     return (
-        <div className="header-wrap w-full  flex justify-between items-center px-12 py-4 fixed z-10 bg-sweet">
+        <div
+            className={
+                'header-wrap ' +
+                (props.isScroll.scroll > 0 ? 'hidden' : '') +
+                (props.isScroll.offsetTop === 0 ? 'top' : '')
+            }
+        >
             <h1 id="logo" className="w-48">
                 <a href="#">
                     <svg

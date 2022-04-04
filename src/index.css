@@ -26,6 +26,9 @@
 .btn-primary-w{
   @apply border border-white px-10 py-3.5 text-center transition duration-500 hover:bg-white hover:text-gray hover:transition hover:ease-in-out hover:duration-500
 } 
+.visual-wrap{
+  @apply w-full h-screen overflow-hidden bg-salmon
+}
 .title{
   @apply text-6xl tracking-wider text-gray font-domaine
 }
@@ -56,4 +59,14 @@
 .hide{ 
   @apply transition ease-in-out duration-300 -translate-y-full;
   
+}
+
+.content-box img{
+  @apply relative object-cover object-center min-w-full h-full
+}
+.text-content{
+  @apply w-full h-1/2 lg:w-1/2 lg:h-full flex items-center text-gray translate-y-8 delay-100 opacity-0 ease-linear duration-500 ;
+}
+.active{
+  @apply translate-y-0  opacity-100 
 }

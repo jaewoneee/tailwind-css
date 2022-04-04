@@ -2,7 +2,7 @@ import { Header } from './components/common/Header';
 import { Visual } from './components/Visual';
 import { List } from './components/List';
 import { Banner } from './components/Banner';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 function App() {
     const [scroll, setScroll] = useState(0);
@@ -24,6 +24,8 @@ function App() {
             onWheel={e => handleScroll(e)}
         >
             <Header isScroll={{ scroll, offsetTop }} />
+            <Visual main={true} />
+            <List sweet={true} />
             <Visual />
             <List />
             <Banner />

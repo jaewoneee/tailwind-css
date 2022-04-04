@@ -6,5 +6,13 @@
         { "title": "Flower Paper Sculpture 3", "price": "13,90€" },
         { "title": "Flower Paper Sculpture 2", "price": "13,90€" },
         { "title": "Iris Wire Basket", "price": "57,50€" }
+    ],
+    "retro": [
+        { "title": "Riviera Arch Ceramic Tray - Purple", "price": "32,50€" },
+        { "title": "Riviera Arch Ceramic Tray - Orange", "price": "32,50€" },
+        { "title": "Riviera Wave Ceramic Tray - Blue", "price": "32,50€" },
+        { "title": "Riviera Wave Ceramic Tray - Purple", "price": "32,50€" },
+        { "title": "Paper Vase Riviera Wave - Orange", "price": "19,50€" },
+        { "title": "Paper Vase Riviera Wave - Blue", "price": "19,50€" }
     ]
 }

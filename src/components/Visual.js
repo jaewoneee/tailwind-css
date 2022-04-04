@@ -1,24 +1,32 @@
-import bg1 from '../assets/images/bg1.webp';
+import { bg1, bg4 } from '../assets/index';
 
-export const Visual = () => {
+export const Visual = props => {
     return (
         <div className="visual-wrap w-full h-screen overflow-hidden bg-salmon">
             <div className="visual-inner h-full">
                 <ul className="w-full h-full">
-                    <li className="flex justify-between w-full h-full">
-                        <div className="w-1/2">
+                    <li className="lg:flex lg:justify-between w-full h-full">
+                        <div className="w-full h-1/2 overflow-hidden lg:w-1/2 lg:h-full">
                             <img
-                                src={bg1}
+                                src={props.main ? bg1 : bg4}
                                 alt=""
-                                className="w-full relative -top-40"
+                                className="relative object-cover object-center min-w-full h-full"
                             />
                         </div>
-                        <div className="info-box w-1/2 h-full flex items-center text-gray">
+                        <div className="w-full h-1/2 lg:w-1/2 lg:h-full flex items-center text-gray">
                             <div className="w-full text-center">
-                                <p className="font">Ceramic Trays</p>
-                                <h2 className="my-10 title">Set the Scene</h2>
+                                <p>
+                                    {props.main
+                                        ? 'Ceramic Trays'
+                                        : 'Limited Edition'}
+                                </p>
+                                <h2 className="my-10 title font-medium">
+                                    {props.main
+                                        ? 'Set the Scene'
+                                        : 'Jaime Hayon x Octaevo'}
+                                </h2>
                                 <a href="#" className="shop-btn btn-primary">
-                                    Shop Now
+                                    {props.main ? 'Shop Now' : 'Read More'}
                                 </a>
                             </div>
                         </div>

@@ -5,7 +5,7 @@ export const Header = props => {
         <div
             className={
                 'header-wrap ' +
-                (props.isScroll.scroll > 0 ? 'hidden' : '') +
+                (props.isScroll.scroll > 0 ? 'hide' : '') +
                 (props.isScroll.offsetTop === 0 ? 'top' : '')
             }
         >
@@ -35,7 +35,10 @@ export const Header = props => {
                     </svg>
                 </a>
             </h1>
-            <ul id="nav" className="grid grid-cols-6 text-center">
+            <ul
+                id="nav"
+                className="hidden grid-cols-6 text-center text-gray lg:grid"
+            >
                 <li className="">
                     <a href="">New In</a>
                 </li>

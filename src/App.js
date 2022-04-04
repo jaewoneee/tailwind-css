@@ -21,7 +21,7 @@ function App() {
 
     return (
         <div
-            className="wrapper w-full bg-slate-600"
+            className="wrapper w-full bg-slate-600 scroll-smooth"
             onWheel={e => handleScroll(e)}
         >
             <Header isScroll={{ scroll, offsetTop }} />

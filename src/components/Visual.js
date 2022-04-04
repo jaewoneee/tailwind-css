@@ -4,6 +4,7 @@ import { bg1, bg4 } from '../assets/index';
 export const Visual = props => {
     const [currentOffset, setOffset] = useState(0);
     const text = useRef();
+    const img = useRef();
 
     useEffect(() => {
         window.addEventListener('scroll', onScroll);
@@ -12,18 +13,18 @@ export const Visual = props => {
     useEffect(() => {
         if (props.active) {
             text.current.classList.add('active');
+            img.current.classList.add('active');
         }
-        if (!props.active && currentOffset > 1100) {
-            const target = text.current;
-            target.classList.add('active');
+        if (!props.active && currentOffset > 900) {
+            text.current.classList.add('active');
+            img.current.classList.add('active');
         }
     }, [currentOffset]);
 
     const onScroll = e => {
-        let timer;
         const scrollTop = ('scroll', e.srcElement.scrollingElement.scrollTop);
 
-        timer = setTimeout(() => {
+        setTimeout(() => {
             setOffset(scrollTop);
         }, 100);
     };
@@ -34,7 +35,12 @@ export const Visual = props => {
                 <ul className="w-full h-full content-box">
                     <li className="lg:flex lg:justify-between w-full h-full">
                         <div className="w-full h-1/2 overflow-hidden lg:w-1/2 lg:h-full">
-                            <img src={props.main ? bg1 : bg4} alt="" />
+                            <img
+                                className="opacity-0 transition ease-in duration-1000"
+                                src={props.main ? bg1 : bg4}
+                                alt="thumbnail"
+                                ref={img}
+                            />
                         </div>
                         <div
                             className={
@@ -49,7 +55,14 @@ export const Visual = props => {
                                         ? 'Ceramic Trays'
                                         : 'Limited Edition'}
                                 </p>
-                                <h2 className="my-10 title font-medium">
+                                <h2
+                                    className={
+                                        'my-10 title font-medium ' +
+                                        (!props.active
+                                            ? 'text-7xl'
+                                            : 'text-6xl ')
+                                    }
+                                >
                                     {props.main
                                         ? 'Set the Scene'
                                         : 'Jaime Hayon x Octaevo'}

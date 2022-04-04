@@ -1,5 +1,3 @@
-import { useEffect, useState } from 'react';
-
 export const Header = props => {
     return (
         <div

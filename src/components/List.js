@@ -67,7 +67,7 @@ export const List = props => {
     return (
         <div className="list-wrap py-10 w-full  h-screen  bg-sweet">
             <div className="list-inner w-full relative top-1/2 -translate-y-1/2 text-gray">
-                <h2 className="text-center title">
+                <h2 className="text-center title text-6xl">
                     {props.sweet ? 'Sweet Touch' : 'Retro Rivival'}
                 </h2>
                 <div className="w-full overflow-hidden  overflow-x-scroll px-10">

@@ -30,7 +30,7 @@
   @apply w-full h-screen overflow-hidden bg-salmon
 }
 .title{
-  @apply text-6xl tracking-wider text-gray font-domaine
+  @apply tracking-wider text-gray font-domaine
 }
 .header-wrap{
   @apply w-full flex justify-between items-center px-12 py-4 fixed z-10 top-0 bg-sweet transition ease-in-out duration-300 shadow-sm
@@ -65,7 +65,7 @@
   @apply relative object-cover object-center min-w-full h-full
 }
 .text-content{
-  @apply w-full h-1/2 lg:w-1/2 lg:h-full flex items-center text-gray translate-y-8 delay-100 opacity-0 ease-linear duration-500 ;
+  @apply w-full h-1/2 lg:w-1/2 lg:h-full flex items-center text-gray translate-y-8 delay-500 opacity-0 ease-linear duration-500 ;
 }
 .active{
   @apply translate-y-0  opacity-100 

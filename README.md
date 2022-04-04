@@ -1,4 +1,4 @@
-#Practicing tailwindcss
+# Practicing tailwindcss
 
 yup, the repository is for practicing tailwind by cloning [this site](https://www.octaevo.com/).
 

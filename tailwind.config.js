@@ -3,7 +3,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        domaine: ["domaine", "serif"],
+        domaine: ["made", "serif"],
       },
       textIndent: {
         none: "-9999px",
@@ -11,9 +11,13 @@ module.exports = {
       colors: {
         salmon: "#fbeeec",
         gray: "#313131",
+        sweet: "#f6f6ed",
       },
       borderWidth: {
-        DEFAULT: "1px",
+        default: "1px",
+      },
+      width: {
+        double: "200%",
       },
     },
     screens: {

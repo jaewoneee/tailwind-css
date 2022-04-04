@@ -16,13 +16,8 @@ export const Visual = () => {
                         <div className="info-box w-1/2 h-full flex items-center text-gray">
                             <div className="w-full text-center">
                                 <p className="font">Ceramic Trays</p>
-                                <h2 className="text-6xl my-10 tracking-wider">
-                                    Set the Scene
-                                </h2>
-                                <a
-                                    href="#"
-                                    className="shop-btn border border-black px-10 py-4 transition duration-500 hover:bg-gray hover:text-white hover:transition hover:ease-in-out hover:duration-500"
-                                >
+                                <h2 className="my-10 title">Set the Scene</h2>
+                                <a href="#" className="shop-btn btn-primary">
                                     Shop Now
                                 </a>
                             </div>

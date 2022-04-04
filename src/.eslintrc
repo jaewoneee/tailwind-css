@@ -5,5 +5,10 @@
     "env": {
         "browser": true,
         "node": true
+    },
+    "rules": {
+        "no-undef":"off",
+        "no-unused-vars":"off"
     }
+
 }

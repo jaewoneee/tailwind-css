@@ -1,4 +1,5 @@
 import { Header } from './components/common/Header';
+import { Footer } from './components/common/Footer';
 import { Visual } from './components/Visual';
 import { List } from './components/List';
 import { Banner } from './components/Banner';
@@ -20,16 +21,14 @@ function App() {
     }
 
     return (
-        <div
-            className="wrapper w-full bg-slate-600 scroll-smooth"
-            onWheel={e => handleScroll(e)}
-        >
+        <div className="wrapper w-full" onWheel={e => handleScroll(e)}>
             <Header isScroll={{ scroll, offsetTop }} />
             <Visual main={true} active={true} />
             <List sweet={true} />
             <Visual active={false} />
             <List />
             <Banner />
+            <Footer />
         </div>
     );
 }

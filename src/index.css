@@ -41,31 +41,32 @@
   @apply shadow-none;
   background-color: transparent ! important;
 }
-
-
 .item{
-  margin-right:2.5%
+  margin-right:2.5%;
+  width:calc(100% / 6);
+  flex-shrink: 0;
 }
 
 .item img{
   margin: 0 auto;
-}
 
+}
 .banner{
   @apply bg-no-repeat bg-center bg-cover;
   background-image: url(./assets/images/bg3.webp);
 }
-
 .hide{ 
   @apply transition ease-in-out duration-300 -translate-y-full;
   
 }
-
 .content-box img{
   @apply relative object-cover object-center min-w-full h-full
 }
 .text-content{
   @apply w-full h-1/2 lg:w-1/2 lg:h-full flex items-center text-gray translate-y-8 delay-500 opacity-0 ease-linear duration-500 ;
+}
+.img-content{
+  @apply w-full h-1/2 overflow-hidden lg:w-1/2 lg:h-full
 }
 .active{
   @apply translate-y-0  opacity-100 

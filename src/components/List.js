@@ -23,10 +23,10 @@ export const List = props => {
     function makeList(data, thumbnail) {
         return data.map((item, i) => {
             return (
-                <li className="lg:w-1/3 text-center item relative">
+                <li className="text-center item relative">
                     <button
                         type="button"
-                        className="border border-DEFAULT rounded-full p-2.5 absolute right-0"
+                        className="border border-DEFAULT rounded-full p-2.5 absolute right-0 z-10"
                     >
                         <svg
                             width="16"

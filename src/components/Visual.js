@@ -26,7 +26,7 @@ export const Visual = props => {
 
         setTimeout(() => {
             setOffset(scrollTop);
-        }, 100);
+        }, 500);
     };
 
     return (
@@ -34,7 +34,7 @@ export const Visual = props => {
             <div className="visual-inner h-full">
                 <ul className="w-full h-full content-box">
                     <li className="lg:flex lg:justify-between w-full h-full">
-                        <div className="w-full h-1/2 overflow-hidden lg:w-1/2 lg:h-full">
+                        <div className="img-content">
                             <img
                                 className="opacity-0 transition ease-in duration-1000"
                                 src={props.main ? bg1 : bg4}
@@ -42,13 +42,7 @@ export const Visual = props => {
                                 ref={img}
                             />
                         </div>
-                        <div
-                            className={
-                                'text-content ' +
-                                +(!props.active ? 'sub-content' : '')
-                            }
-                            ref={text}
-                        >
+                        <div className="text-content" ref={text}>
                             <div className="w-full text-center">
                                 <p>
                                     {props.main
